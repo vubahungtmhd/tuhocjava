@@ -65,6 +65,7 @@ public class main {
         }
         case 3:
         {
+          System.out.println("Tìm kiếm theo số báo danh");
           break;
         }
         case 4:
