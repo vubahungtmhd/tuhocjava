@@ -19,5 +19,15 @@ public class TuyenSinh {
       System.out.println(x);
     }
   }
+  public void timTheoSoBD(int soBaoDanh)
+  {
+    for(QuanLyThiSinh x:danhSach)
+    {
+      if(soBaoDanh==x.getSoBaoDanh())
+      {
+        System.out.println(x);
+      }
+    }
+  }
 
 }

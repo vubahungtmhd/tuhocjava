@@ -29,7 +29,7 @@ public class main {
           String muc=sc.nextLine();
           System.out.println("Nhập lựa chọn khối");
           String khoi=sc.nextLine();
-          switch (khoi)
+          switch (khoi.toLowerCase().trim())//đổi về chữ thường và xóa khoảng trắng
           {
             case "a":
             {
@@ -66,11 +66,16 @@ public class main {
         case 3:
         {
           System.out.println("Tìm kiếm theo số báo danh");
+          System.out.println("Nhập số báo danh");
+          int timSoBD=sc.nextInt();
+          System.out.println("Thí sinh có số báo danh"+ timSoBD+" là: ");
+          ts.timTheoSoBD(timSoBD);
           break;
         }
         case 4:
         {
-          break;
+          System.out.println("Thoát chương trình: ");
+          return;
         }
         default:
         {
