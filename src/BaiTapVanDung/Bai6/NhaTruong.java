@@ -50,6 +50,7 @@ public class NhaTruong {
     String s=ten.trim();
     //trim() xóa khoảng trắng đầu cuối
     //Thiếu code xóa khoảng trắng ở giữa, trường hợp nhập ở giữa nhiều khoảng trắng sẽ không đúng, cần hoàn thiện
+    //VD: Vũ    Bá Hùng-> lấy    Bá Hùng
     int index=s.lastIndexOf(" ");
       if(index==-1)
         return s;
