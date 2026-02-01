@@ -43,9 +43,13 @@ public class NhaTruong {
       }
     }
   }
+  //Hàm này sử dụng để lấy tên trong họ và tên
+  //Ví dụ: Nguyễn Đức Anh- > Anh
   private String LayTen(String ten)
   {
-      String s=ten.trim();
+    String s=ten.trim();
+    //trim() xóa khoảng trắng đầu cuối
+    //Thiếu code xóa khoảng trắng ở giữa, trường hợp nhập ở giữa nhiều khoảng trắng sẽ không đúng, cần hoàn thiện
     int index=s.lastIndexOf(" ");
       if(index==-1)
         return s;
