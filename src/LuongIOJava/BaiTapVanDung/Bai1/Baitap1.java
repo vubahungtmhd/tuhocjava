@@ -102,5 +102,6 @@ public class Baitap1 {
     else
       System.out.println("Kết thúc chương trình");
     sc.close();
+    System.out.println("Tôi đã tạo 1 nhánh mới cho dự án");
   }
 }
