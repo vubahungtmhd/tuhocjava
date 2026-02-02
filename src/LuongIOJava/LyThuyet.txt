@@ -1,0 +1,19 @@
+Trong Java, có một sự khác biệt quan trọng giữa việc làm việc với Filelớp và làm việc với các luồng I/O (luồng đầu vào/đầu ra):
+- Lớp File(từ java.io) được sử dụng để lấy thông tin về các tệp và thư mục :
+    +Tệp tin đó có tồn tại không?
+    +Tên hoặc kích thước của nó là gì?
+    +Tạo hoặc xóa tệp và thư mục
+- Nhưng:File lớp này không đọc hoặc ghi nội dung của tập tin.
+- Các công cụ FileWritercụ để viết văn bản và Scanner đọc văn bản dành cho các tệp văn bản đơn giản
+=> Luồng I/O linh hoạt hơn vì chúng hoạt động với cả dữ liệu văn bản
+   và dữ liệu nhị phân (như hình ảnh, âm thanh, PDF).
+
+Các kiểu của Streams
+- Byte Streams: Hoạt động với DL nhị phân thô: Hình ảnh, âm thanh, PDF.
+  VD: FileInputStream, FileOutputStream
+- Character Streams: hoạt động với văn bản (ký tự và chuỗi).
+                     các luồng này tự động xử lý mã hóa ký tự.
+  VD: FileReader, FileWriter, BufferedReader, BufferedWriter.
+- Chú ý:
+    + Sử dụng Character Streams khi làm việc với văn bản.
+    + Sử dụng Byte Streams khi làm việc với dữ liệu nhị phân.
