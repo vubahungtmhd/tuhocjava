@@ -1,4 +1,4 @@
-package KieuDanhSach.DanhSachArrayList;
+package KieuDanhSach.DanhSachArrayList.DanhSachArrayList;
 
 import java.util.ArrayList;
 import java.util.Collections;

@@ -11,3 +11,44 @@
     + cung cấp các giao diện: List, Set, Map và các lớp: ArrayList, HashSet, HashMap...
 để triểu khai các giao diện đó
     + Tất cả nằm trong sGói dịch vụ Java.until
+==========================================================================
+BẢN TỔNG HỢP CÁC KIỂU DANH SÁCH (JAVA COLLECTIONS)
+==========================================================================
+
+1. BẢNG SO SÁNH NHANH (ASCII TABLE)
++----------------+-----------+------------+----------------+------------+
+| Đặc điểm       | ArrayList | HashSet    | LinkedHashSet  | TreeSet    |
++----------------+-----------+------------+----------------+------------+
+| Họ hàng        | List      | Set        | Set            | Set        |
+| Trùng lặp?     | Có        | KHÔNG      | KHÔNG          | KHÔNG      |
+| Thứ tự         | Thêm vào  | Lung tung  | Thêm vào       | Sắp xếp    |
+| Chỉ số (Index) | CÓ        | KHÔNG      | KHÔNG          | KHÔNG      |
+| Tốc độ         | Nhanh     | Nhanh nhất | Nhanh (vừa)    | Chậm nhất  |
++----------------+-----------+------------+----------------+------------+
+
+2. TÓM TẮT GIỐNG VÀ KHÁC
+------------------------
+* Giống nhau:
+  - Đều lưu trữ nhóm đối tượng.
+  - Thuộc Java Collections Framework.
+  - Dùng chung: add(), remove(), size(), clear().
+
+* Khác nhau:
+  - Cấu trúc: ArrayList (Mảng), Hash (Bảng băm), Tree (Cây nhị phân).
+  - Mục tiêu: List ưu tiên VỊ TRÍ, Set ưu tiên DUY NHẤT.
+
+3. MỤC ĐÍCH SỬ DỤNG (KHI NÀO CHỌN CÁI NÀO?)
+-------------------------------------------
+- ARRAYLIST: Cần danh sách đơn thuần, lấy phần tử theo vị trí (index) nhanh.
+  (VD: Danh sách sinh viên trong lớp).
+
+- HASHSET: Cần tốc độ tối đa, không quan tâm thứ tự, không cho trùng.
+  (VD: Lưu danh sách các IP đã truy cập).
+
+- LINKEDHASHSET: Không trùng nhưng phải GIỮ ĐÚNG THỨ TỰ lúc nhập vào.
+  (VD: Lịch sử trình duyệt web).
+
+- TREESET: Không trùng và phải TỰ ĐỘNG SẮP XẾP ngăn nắp (A-Z, 1-9).
+  (VD: Bảng xếp hạng điểm số).
+
+==========================================================================
