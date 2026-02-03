@@ -1,0 +1,13 @@
+
+- Tất cả đều làm một phần của Collection
+- ArrayList:
+    + Có thể thay đổi kích thước
+    + Cho phép lưu trữ và truy cập các phần tử theo index
+- Hashet: Các phần tử là duy nhất (không được trùng lặp)
+- Hasmap:
+    + Lưu trữ theo cặp <key><value>
+    + Key là duy nhất, nếu trùng sẽ thay thế value mới
+- Collection:
+    + cung cấp các giao diện: List, Set, Map và các lớp: ArrayList, HashSet, HashMap...
+để triểu khai các giao diện đó
+    + Tất cả nằm trong sGói dịch vụ Java.until
