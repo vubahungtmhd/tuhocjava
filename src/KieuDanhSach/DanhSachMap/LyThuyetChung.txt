@@ -1,0 +1,9 @@
+Map là 1 phần của Colections
+- Được sử dụng để lưu trữ các cặp: Key,value
+- Mỗi key là duy nhất và các value có thể trùng lặp
+- Không truy cập theo index nhưng có thể truy cập theo Key
+* Có 3 cách triển khai
+    - HashMap: nhanh và ko có trật tự
+    - TreeMap: Được sắp xep theo Key
+    - Linked Hashmap: Được sắp xếp theo tự chèn
+
