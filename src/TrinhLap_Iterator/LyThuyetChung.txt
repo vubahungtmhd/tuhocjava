@@ -1,0 +1,13 @@
+Trình lặp Iterator:
++ Có thể sd để lặp qua tập hợp(List,Set)
++ iterator() được sử dụng để lấy giá trị Iterator cho bất kì tập hợp nào
+- Ưu điểm:
++ Tính thống nhất: Cung cấp một cách chuẩn hóa để có thể lặp qua bất kì loại collector nào
++ Khả năng chỉnh sửa: Bạn có thể xóa phần tử khỏi danh sách ngay khi đang lặp
+(for-each sẽ không làm được)
+- Các phương thức chính:
++ hasNext(): Trả về true nếu danh sách vẫn còn phần tử đề duyệt
++ next(): Trả về phần tử tiếp theo và di chuyển con trỏ lên 1 vị trí
++ remove(): Xóa phần tử cuối cùng vửa được trả về từ next()
+
+
