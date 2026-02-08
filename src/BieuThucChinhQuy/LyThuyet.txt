@@ -1,0 +1,8 @@
+Biểu thức chính quy:
+- Chuỗi kí tự tạo thành mẫu tìm kiếm.
+- Có thể là 1 kí tự hoặc một mẫu phức tạp
+- Có thể sử dụng để thực hiện tất các các loại thao tác tìm kiếm và thay thế văn bản
+- Sử dụng gói java.until.regx đề làm việc với Regular Expression
++ Pattern Class: Định nghĩa 1 mẫu (như 1 cái khuôn)
++ Mather Class: Sử dụng để tìm kiếm biểu mẫu( so sánh với cái khuôn)
++ PatternSystaxException: Cho biết lỗi cú pháp trong biểu thuc chính quy
