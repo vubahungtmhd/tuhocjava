@@ -1,0 +1,16 @@
+Luồng Thread:
+- Cho phép chương trình hoạt động hiệu quả hơn bằng cách: thực hiện nhiều tác vụ cùng lúc
+- Thực hiện các tác vụ phức tạp trong nền mà không gián đoạn chương trình chính
+Creat a Thread:
+- Kế thừa lơp Thread và ghi đè phương thức run của nó
+- Triển khai interface runnable (Lợi hơn 1)
+- Dùng Anonymous Class hoặc Lambda Expresion
+
+* Kế thừa thread:
+- B1: Tạo lớp kế thừa của lớp thread
+- B2: Override phương thức run()
+- B3: Khởi tạo đối tượng
+- B4: Kích hoạt thread bằng cách dùng hàm start
+      + Không dùng run vì nó sẽ chạy as như hàm btg mà k vào luồng
+      + Sau khi kết thúc luồng thì không thể gọi lại đối tượng mà phải tạo mới
+      + Nếu tạo ra 2 luồng t1,t2 cùng chạy thì thứ tự sẽ không cố định
