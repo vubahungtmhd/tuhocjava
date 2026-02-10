@@ -1,0 +1,38 @@
+============================================================
+TÓM TẮT KIẾN THỨC: JAVA LAMBDA EXPRESSION
+============================================================
+
+1. BẢN CHẤT
+- Là một hàm ẩn danh (không tên), nhận tham số và trả về giá trị.
+- Giúp thay thế Anonymous Inner Class (Lớp ẩn danh) một cách ngắn gọn.
+- Có thể viết ngay trong thân phương thức hoặc lưu vào biến.
+
+2. ĐIỀU KIỆN BẮT BUỘC: FUNCTIONAL INTERFACE
+- Lambda CHỈ hoạt động với Functional Interface.
+- Định nghĩa: Là interface chỉ chứa DUY NHẤT một phương thức trừu tượng (abstract method).
+- Lambda phải khớp hoàn toàn về số lượng tham số và kiểu trả về với phương thức này.
+
+3. CÚ PHÁP VÀ QUY TẮC RÚT GỌN
+Cấu trúc: (parameters) -> { body }
+
+* Quy tắc tham số:
+  - 0 tham số: () -> { ... }
+  - 1 tham số: parameter -> { ... } (Có thể bỏ dấu ngoặc đơn)
+  - Nhiều tham số: (p1, p2) -> { ... } (Bắt buộc có dấu ngoặc đơn)
+
+* Quy tắc thân hàm (Body):
+  - 1 dòng lệnh: Bỏ dấu ngoặc nhọn {} và từ khóa 'return'.
+    Ví dụ: (a, b) -> a + b
+  - Nhiều dòng lệnh: Phải dùng dấu ngoặc nhọn {} và dùng 'return' nếu cần trả về giá trị.
+    Ví dụ: (a, b) -> {
+        int res = a + b;
+        return res;
+    }
+
+4. CÁCH SỬ DỤNG PHỔ BIẾN
+- Lưu vào biến: Biến đó phải có kiểu dữ liệu là một Functional Interface.
+- Làm tham số phương thức: Truyền trực tiếp logic vào phương thức (Ví dụ: list.forEach, list.sort).
+- Truy cập biến bên ngoài: Lambda có thể đọc biến bên ngoài nếu biến đó là hằng số (final) hoặc không bị thay đổi giá trị sau khi khai báo.
+
+5. SO SÁNH NHANH
+-
